@@ -42,18 +42,20 @@ Once installed, it can be used in a template as simply as:
 
 | Name             | Type        | Default Value | Description                                                                                                 |
 | ---------------- | ----------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
-| datetime (model) | Date/String |               | Time picker model.                                                                                          |
-| disabled         | Boolean     | false         | Input is disabled.                                                                                          |
-| loading          | Boolean     | false         | Input is loading.                                                                                           |
-| label            | string      |               | Sets input label.                                                                                           |
-| dialogWidth      | Number      | 340           | The width of the dialog.                                                                                    |
-| dateFormat       | string      | yyyy-MM-dd    | Defines the format of a date.                                                                               |
-| timeFormat       | string      | HH:mm         | Defines the format of a time.                                                                               |
-| clearText        | string      | CLEAR         | Sets the text of the clear button.                                                                          |
-| okText           | string      | OK            | Sets the text of the ok button.                                                                             |
-| textFieldProps   | Object      |               | Text fields properties. See [Vuetify Docs](https://vuetifyjs.com/en/components/text-fields 'Vuetify Docs')  |
-| datePickerProps  | Object      |               | Date pickers properties.See [Vuetify Docs](https://vuetifyjs.com/en/components/date-pickers 'Vuetify Docs') |
-| timePickerProps  | Object      |               | Time pickers properties.See [Vuetify Docs](https://vuetifyjs.com/en/components/time-pickers 'Vuetify Docs') |
+| datetime (model) | Date/String |  | Time picker model. |
+| disabled | Boolean | false | Input is disabled. |
+| loading | Boolean | false | Input is loading. |
+| label | string |  | Sets input label. |
+| dialogWidth | Number | 340 | The width of the dialog. |
+| dateFormat | string | yyyy-MM-dd | Defines the format of a date. |
+| timeFormat | string | HH:mm | Defines the format of a time. |
+| clearText | string | CLEAR | Sets the text of the clear button. |
+| okText | string | OK | Sets the text of the ok button. |
+| eventIcon | string | event | Set calendar icon button. |
+| accessTimeIcon | string | access_time | Set the clock icon button. |
+| textFieldProps | Object |  | Text fields properties. See [Vuetify Docs](https://vuetifyjs.com/en/components/text-fields 'Vuetify Docs') |
+| datePickerProps | Object |  | Date pickers properties.See [Vuetify Docs](https://vuetifyjs.com/en/components/date-pickers 'Vuetify Docs') |
+| timePickerProps | Object |  | Time pickers properties.See [Vuetify Docs](https://vuetifyjs.com/en/components/time-pickers 'Vuetify Docs') |
 
 ## Events
 

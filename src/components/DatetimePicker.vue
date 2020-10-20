@@ -23,12 +23,16 @@
         <v-tabs fixed-tabs v-model="activeTab">
           <v-tab key="calendar">
             <slot name="dateIcon">
-              <v-icon>event</v-icon>
+              <v-icon>
+                {{ eventIcon }}
+              </v-icon>
             </slot>
           </v-tab>
           <v-tab key="timer" :disabled="dateSelected">
             <slot name="timeIcon">
-              <v-icon>access_time</v-icon>
+              <v-icon>
+                {{ accessTimeIcon }}
+              </v-icon>
             </slot>
           </v-tab>
           <v-tab-item key="calendar">
@@ -66,6 +70,8 @@ const DEFAULT_TIME_FORMAT = 'HH:mm:ss'
 const DEFAULT_DIALOG_WIDTH = 340
 const DEFAULT_CLEAR_TEXT = 'CLEAR'
 const DEFAULT_OK_TEXT = 'OK'
+const DEFAULT_EVENT_ICON = 'event'
+const DEFAULT_ACCESS_TIME_ICON = 'access_time'
 
 export default {
   name: 'v-datetime-picker',
@@ -116,7 +122,15 @@ export default {
     },
     timePickerProps: {
       type: Object
-    }
+    },
+    eventIcon: {
+      type: String,
+      default: () => DEFAULT_EVENT_ICON
+    },
+    accessTimeIcon: {
+      type: String,
+      default: () => DEFAULT_ACCESS_TIME_ICON
+    },
   },
   data() {
     return {
